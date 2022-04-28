@@ -9,18 +9,9 @@
   <% console.log(newPosts); %>
 </div>
 
-  <% for (var i=0; i<newPosts.length; i++) { %>
-
-   <% console.log(newPosts[i].title) %>
-    
-   <% } %> 
+   <% newPosts.forEach(function(post) { %>
+     <% console.log(post.title) %>
+   <% }) %>
+  
 
 <%- include('partials/footer'); -%>
-
-    <!-- const post = {
-
-    title: req.body.postTitle,
-
-    content: req.body.postBody
-
-  }; -->
