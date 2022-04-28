@@ -5,5 +5,9 @@
 <div>
   <p><%= homeContent %></p>
 </div>
+<div>
+  <% console.log(newPosts); %>
+  <p><%- JSON.stringify(newPosts) %></p>
+</div>
 
 <%- include('partials/footer'); -%>
