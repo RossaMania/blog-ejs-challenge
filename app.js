@@ -77,10 +77,16 @@ app.post("/compose", function (req, res) {
 
         console.log("Match found!")
 
+        res.render("post", { 
+          postPageTitle: post.title, 
+          postPageContent: post.content
+        })
+ 
       }
 
     })
   })
+
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
