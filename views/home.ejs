@@ -9,9 +9,12 @@
 <% console.log(newPosts); %>
 
    <% newPosts.forEach(function(post) { %>
-     <% console.log(post.title) %>
+     
+    <% console.log(post.title) %>
+
        <h1><%= post.title %></h1>
-       <p><%= post.content %></p>
+
+       <p><%= post.content.substring(0, 100) %></p>
 
    <% }) %>
   
